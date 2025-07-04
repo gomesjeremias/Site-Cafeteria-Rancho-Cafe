@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rancho Café - A Florista</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="#home" class="logo-link"><img src="./assets/LogoCafeteriaaflorista.png" alt="Café Logo"
+          class="logo"></a>
+
+      <button class="hamburger" id="hamburger">&#9776;</button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Quem Somos</a></li>
+        <li><a href="#menu">Cardápio</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="home">
+      <img src="./assets/bg-fotodefundo.png" alt="Banner" class="home-bg">
+      <div class="overlay">
+        <div class="home-text">
+          <h1>Rancho Café - A Florista</h1>
+          <p class="paragrafo-frase">Flores que acolhem, sabores que encantam...</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>Quem Somos</h2>
+      <div class="about-content">
+        <p>Bem-vindo ao Rancho Café – A Florista, um refúgio acolhedor onde sabor, saúde e natureza se
+          encontram. Aqui, acreditamos que o prazer de um bom café e de um doce especial não precisa vir
+          acompanhado de restrições.
+
+          Somos uma cafeteria artesanal, especializada em produtos sem glúten e sem lactose, pensada com
+          carinho para quem busca uma alimentação mais leve, consciente ou com restrições alimentares – sem
+          abrir mão do sabor.</p>
+        <p>Nosso espaço foi inspirado no charme do campo e na delicadeza das flores, criando um ambiente que
+          convida à pausa, ao encontro e à reconexão com o natural. Cada detalhe do Rancho Café – A Florista
+          foi pensado para proporcionar uma experiência única, da decoração à seleção de ingredientes.
+
+          Aqui, tudo é feito com cuidado: dos cafés especiais aos bolos, pães e quitutes fresquinhos, todos
+          livres de glúten e lactose, preparados com ingredientes selecionados e muito amor.
+
+          Seja para começar o dia com energia, fazer uma pausa no meio da tarde ou simplesmente desfrutar um
+          momento especial, o Rancho Café – A Florista é o seu lugar.</p>
+        <p>🌸 Sinta-se em casa. Sinta-se bem. Sinta o sabor do cuidado.</p>
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2>Nosso Cardápio</h2>
+      
+      <!-- Sistema de Abas -->
+      <div class="menu-tabs">
+        <button class="tab-button active" data-tab="tortas">Tortas S/ G/L</button>
+        <button class="tab-button" data-tab="salgados">Tortas e Salgados</button>
+        <button class="tab-button" data-tab="bebidas">Bebidas</button>
+      </div>
+
+      <!-- Aba Tortas -->
+      <div id="tortas" class="tab-content active">
+        <div class="sub-tabs">
+          <button class="sub-tab-button active" data-subtab="sem-gluten">Sem Glúten</button>
+          <button class="sub-tab-button" data-subtab="sem-lactose">Sem Lactose</button>
+        </div>
+
+        <!-- Tortas Sem Glúten -->
+        <div id="sem-gluten" class="sub-tab-content active">
+          <div class="menu-container">
+            <div class="menu-item" data-item="torta-morango-nata-suspiros">
+              <img src="./assets/tortademorangocomnataesuspiros-semglúten.jpeg" alt="Torta de Morango com Nata e Suspiros">
+              <h3>Torta de Morango com Nata e Suspiros</h3>
+              <p class="dietary-info">Sem Glúten</p>
+              <p class="price">R$ 90,00 kg</p>
+            </div>
+
+            <div class="menu-item" data-item="bolo-simples-ninho">
+              <img src="./assets/Bolosimplessemglutencomcoberturadeninhoeleitecondensado.jpeg" alt="Bolo Simples com Cobertura de Ninho">
+              <h3>Bolo Simples com Cobertura de Ninho e Leite Condensado</h3>
+              <p class="dietary-info">Sem Glúten</p>
+              <p class="price">R$ 85,00 kg</p>
+            </div>
+
+            <div class="menu-item" data-item="mini-churros">
+              <img src="./assets/Miniochurrosdedocedeleite-semglúten.jpeg" alt="Mini Churros de Doce de Leite">
+              <h3>Mini Churros de Doce de Leite</h3>
+              <p class="dietary-info">Sem Glúten</p>
+              <p class="price">R$ 8,00 unidade</p>
+            </div>
+
+            <div class="menu-item" data-item="torta-morango-nata">
+              <img src="./assets/tortademorangocomnata.jpeg" alt="Torta de Morango com Nata">
+              <h3>Torta de Morango com Nata</h3>
+              <p class="dietary-info">Sem Glúten</p>
+              <p class="price">R$ 90,00 kg</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tortas Sem Lactose -->
+        <div id="sem-lactose" class="sub-tab-content">
+          <div class="menu-container">
+            <div class="menu-item" data-item="rocambole-amendoim">
+              <img src="./assets/rocomboledeamendoim.jpeg" alt="Rocambole de Amendoim">
+              <h3>Rocambole de Amendoim</h3>
+              <p class="dietary-info">Sem Glúten e Sem Lactose</p>
+              <p class="price">R$ 18,00 fatia</p>
+            </div>
+
+            <div class="menu-item" data-item="bolo-morango-suspiro">
+              <img src="./assets/Bolosemleite-Morangoesuspiro.jpeg" alt="Bolo sem Leite - Morango e Suspiro">
+              <h3>Bolo de Morango e Suspiro</h3>
+              <p class="dietary-info">Sem Lactose</p>
+              <p class="price">R$ 80,00 kg</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aba Tortas e Salgados -->
+      <div id="salgados" class="tab-content">
+        <div class="menu-container">
+          <div class="menu-item" data-item="quiche-brocolis-bacon">
+            <img src="./assets/quichedebroclolisebacon.jpeg" alt="Quiche de Brócolis e Bacon">
+            <h3>Quiche de Brócolis e Bacon</h3>
+            <p class="price">R$ 18,00 fatia</p>
+          </div>
+
+          <div class="menu-item" data-item="empadinha-camarao">
+            <img src="./assets/Empadinhadecamarao.jpeg" alt="Empadinha de Camarão">
+            <h3>Empadinha de Camarão</h3>
+            <p class="price">R$ 12,00 unidade</p>
+          </div>
+
+          <div class="menu-item" data-item="coxinha-costela">
+            <img src="./assets/Coxinhadecostela.jpeg" alt="Coxinha de Costela">
+            <h3>Coxinha de Costela</h3>
+            <p class="price">R$ 10,00 unidade</p>
+          </div>
+
+          <div class="menu-item" data-item="torta-pistache-uvas">
+            <img src="./assets/tortadepistachecomuvasverdes.jpeg" alt="Torta de Pistache com Uvas Verdes">
+            <h3>Torta de Pistache com Uvas Verdes</h3>
+            <p class="price">R$ 18,00 fatia</p>
+          </div>
+
+          <div class="menu-item" data-item="torta-geleia-morango">
+            <img src="./assets/tortadeGeleiademorango.jpeg" alt="Torta de Geleia de Morango">
+            <h3>Torta Artesanal de Geleia de Morango</h3>
+            <p class="price">R$ 18,00 fatia</p>
+          </div>
+
+          <div class="menu-item" data-item="torta-chocolate">
+            <img src="./assets/tortadechocolocatemeioamargo.jpeg" alt="Torta de Chocolate Meio Amargo">
+            <h3>Torta de Chocolate Meio Amargo</h3>
+            <p class="price">R$ 20,00 fatia</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aba Bebidas -->
+      <div id="bebidas" class="tab-content">
+        <div class="sub-tabs">
+          <button class="sub-tab-button active" data-subtab="bebidas-quentes">Bebidas Quentes</button>
+          <button class="sub-tab-button" data-subtab="bebidas-frias">Bebidas Frias</button>
+        </div>
+
+        <!-- Bebidas Quentes -->
+        <div id="bebidas-quentes" class="sub-tab-content active">
+          <div class="menu-container">
+            <div class="menu-item" data-item="cappuccino">
+              <img src="./assets/cappuccino.png" alt="Cappuccino">
+              <h3>Cappuccino</h3>
+              <p class="price">R$ 8,00</p>
+            </div>
+
+            <div class="menu-item" data-item="cafe-com-leite">
+              <img src="./assets/cappuccino.png" alt="Café com Leite">
+              <h3>Café com Leite</h3>
+              <p class="price">R$ 6,00</p>
+            </div>
+
+            <div class="menu-item" data-item="chocolate-quente">
+              <img src="./assets/cappuccino.png" alt="Chocolate Quente">
+              <h3>Chocolate Quente</h3>
+              <p class="price">R$ 10,00</p>
+            </div>
+
+            <div class="menu-item" data-item="cha-frutas">
+              <img src="./assets/cappuccino.png" alt="Chá de Frutas">
+              <h3>Chá de Frutas</h3>
+              <p class="price">R$ 7,00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bebidas Frias -->
+        <div id="bebidas-frias" class="sub-tab-content">
+          <div class="menu-container">
+            <div class="menu-item" data-item="cafe-gelado">
+              <img src="./assets/cappuccino.png" alt="Café Gelado">
+              <h3>Café Gelado</h3>
+              <p class="price">R$ 8,00</p>
+            </div>
+
+            <div class="menu-item" data-item="suco-natural">
+              <img src="./assets/cappuccino.png" alt="Suco Natural">
+              <h3>Suco Natural</h3>
+              <p class="price">R$ 9,00</p>
+            </div>
+
+            <div class="menu-item" data-item="Soda Italiana">
+              <img src="./assets/cappuccino.png" alt="soda Italiana">
+              <h3>Água Saborizada</h3>
+              <p class="price">R$ 5,00</p>
+            </div>
+
+            <div class="menu-item" data-item="refrigerante">
+              <img src="./assets/cappuccino.png" alt="Refrigerante">
+              <h3>Refrigerantes e Água</h3>
+              
+            </div>
+            <div class="menu-item" data-item="Chocoleite">
+              <img src="./assets/Choco Leite.png" alt="chocoleite">
+              <h3>Choco Leite</h3>
+              <p class="price">R$ 5,00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modais -->
+      <!-- Modais Tortas Sem Glúten -->
+      <div id="modal-torta-morango-nata-suspiros" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="torta-morango-nata-suspiros">&times;</span>
+          <h2>Torta de Morango com Nata e Suspiros</h2>
+          <img src="./assets/images/tortademorangocomnataesuspiros-semglúten.jpeg" alt="">
+          <p>Deliciosa torta artesanal com morangos frescos, nata cremosa e suspiros crocantes, livre de glúten.</p>
+          <p class="dietary-info">Sem Glúten</p>
+        </div>
+      </div>
+
+      <div id="modal-bolo-simples-ninho" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="bolo-simples-ninho">&times;</span>
+          <h2>Bolo Simples com Cobertura de Ninho</h2>
+          <img src="./assets/images/Bolosimplessemglutencomcoberturadeninhoeleitecondensado.jpeg" alt="">
+          <p>Bolo fofinho sem glúten com cobertura irresistível de ninho e leite condensado.</p>
+          <p class="dietary-info">Sem Glúten</p>
+        </div>
+      </div>
+
+      <div id="modal-mini-churros" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="mini-churros">&times;</span>
+          <h2>Mini Churros de Doce de Leite</h2>
+          <img src="./assets/images/Miniochurrosdedocedeleite-semglúten.jpeg" alt="">
+          <p>Mini churros crocantes por fora e macios por dentro, recheados com doce de leite cremoso. Livres de glúten.</p>
+          <p class="dietary-info">Sem Glúten</p>
+        </div>
+      </div>
+
+      <div id="modal-torta-morango-nata" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="torta-morango-nata">&times;</span>
+          <h2>Torta de Morango com Nata</h2>
+          <img src="./assets/images/tortademorangocomnata.jpeg" alt="">
+          <p>Clássica torta com morangos frescos e nata cremosa, preparada sem glúten.</p>
+          <p class="dietary-info">Sem Glúten</p>
+        </div>
+      </div>
+
+      <!-- Modais Tortas Sem Lactose -->
+      <div id="modal-rocambole-amendoim" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="rocambole-amendoim">&times;</span>
+          <h2>Rocambole de Amendoim</h2>
+          <img src="./assets/images/rocomboledeamendoim.jpeg" alt="">
+          <p>Delicioso rocambole recheado com creme de amendoim, livre de glúten e lactose.</p>
+          <p class="dietary-info">Sem Glúten e Sem Lactose</p>
+        </div>
+      </div>
+
+      <div id="modal-bolo-morango-suspiro" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="bolo-morango-suspiro">&times;</span>
+          <h2>Bolo de Morango e Suspiro</h2>
+          <img src="./assets/images/Bolosemleite-Morangoesuspiro.jpeg" alt="">
+          <p>Bolo macio de morango com suspiros, preparado sem lactose para quem tem restrições.</p>
+          <p class="dietary-info">Sem Lactose</p>
+        </div>
+      </div>
+
+      <!-- Modais Salgados -->
+      <div id="modal-quiche-brocolis-bacon" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="quiche-brocolis-bacon">&times;</span>
+          <h2>Quiche de Brócolis e Bacon</h2>
+          <img src="./assets/images/quichedebroclolisebacon.jpeg" alt="">
+          <p>Combinação perfeita de brócolis frescos e bacon crocante em massa leve e saborosa.</p>
+        </div>
+      </div>
+
+      <div id="modal-empadinha-camarao" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="empadinha-camarao">&times;</span>
+          <h2>Empadinha de Camarão</h2>
+          <img src="./assets/images/Empadinhadecamarao.jpeg" alt="">
+          <p>Empadinha com recheio generoso de camarão temperado, massa amanteigada e crocante.</p>
+        </div>
+      </div>
+
+      <div id="modal-coxinha-costela" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="coxinha-costela">&times;</span>
+          <h2>Coxinha de Costela</h2>
+          <img src="./assets/images/Coxinhadecostela.jpeg" alt="">
+          <p>Coxinha artesanal com recheio suculento de costela desfiada, massa dourada e crocante.</p>
+        </div>
+      </div>
+
+      <div id="modal-torta-pistache-uvas" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="torta-pistache-uvas">&times;</span>
+          <h2>Torta de Pistache com Uvas Verdes</h2>
+          <img src="./assets/images/tortadepistachecomuvasverdes.jpeg" alt="">
+          <p>Sabor refinado de pistache combinado com a frescura das uvas verdes em uma torta única.</p>
+        </div>
+      </div>
+
+      <div id="modal-torta-geleia-morango" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="torta-geleia-morango">&times;</span>
+          <h2>Torta de Geleia de Morango</h2>
+          <img src="./assets/images/tortadeGeleiademorango.jpeg" alt="">
+          <p>Torta artesanal com geleia caseira de morango, massa crocante e sabor autêntico.</p>
+        </div>
+      </div>
+
+      <div id="modal-torta-chocolate" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="torta-chocolate">&times;</span>
+          <h2>Torta de Chocolate Meio Amargo</h2>
+          <img src="./assets/images/tortadechocolocatemeioamargo.jpeg" alt="">
+          <p>Torta rica em chocolate meio amargo, perfeita para os amantes de chocolate intenso.</p>
+        </div>
+      </div>
+
+      <!-- Modais Bebidas Quentes -->
+      <div id="modal-cappuccino" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="cappuccino">&times;</span>
+          <h2>Cappuccino</h2>
+          <img src="./assets/images/cappuccino.png" alt="">
+          <p>Cappuccino cremoso com espuma de leite vaporizado e um toque especial de canela.</p>
+        </div>
+      </div>
+
+      <div id="modal-cafe-com-leite" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="cafe-com-leite">&times;</span>
+          <h2>Café com Leite</h2>
+          <img src="./assets/images/cappuccino.png" alt="">
+          <p>Clássico café com leite, preparado com grãos selecionados e leite fresco.</p>
+        </div>
+      </div>
+
+      <div id="modal-chocolate-quente" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="chocolate-quente">&times;</span>
+          <h2>Chocolate Quente</h2>
+          <img src="./assets/images/cappuccino.png" alt="">
+          <p>Chocolate quente cremoso e reconfortante, perfeito para dias frios.</p>
+        </div>
+      </div>
+
+      <div id="modal-cha-frutas" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="cha-frutas">&times;</span>
+          <h2>Chá de Frutas</h2>
+          <img src="./assets/images/cappuccino.png" alt="">
+          <p>Chá aromático com blend especial de frutas secas e especiarias naturais.</p>
+        </div>
+      </div>
+
+      <!-- Modais Bebidas Frias -->
+      <div id="modal-cafe-gelado" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="cafe-gelado">&times;</span>
+          <h2>Café Gelado</h2>
+          <img src="./assets/images/cappuccino.png" alt="">
+          <p>Café gelado refrescante, preparado com método cold brew para máximo sabor.</p>
+        </div>
+      </div>
+
+      <div id="modal-suco-natural" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="suco-natural">&times;</span>
+          <h2>Suco Natural</h2>
+          <img src="./assets/images/cappuccino.png" alt="">
+          <p>Sucos naturais preparados na hora com frutas frescas da estação.</p>
+        </div>
+      </div>
+
+      <div id="modal-agua-saborizada" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="agua-saborizada">&times;</span>
+          <h2>Soda Italiana</h2>
+          <img src="./assets/images/cappuccino.png" alt="">
+          <p>Bebida Gaseificada refrescante - Sabores: Morango/Framboesa/Limão siciliano/Cranberry.</p>
+        </div>
+      </div>
+
+      <div id="modal-refrigerante" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="refrigerante">&times;</span>
+          <h2>Refrigerante</h2>
+          <img src="./assets/images/cappuccino.png" alt="">
+          <p>Refrigerantes:  Coca-Cola KS 290 ml: R$ 7,00<br>Laranjinha KS 290 ml: R$ 5,00<br>Refrigerante 600 ml - Coca /Guaraná: R$ 10,00<br>Refrigerante Mini 200 ml: R$ 3,00<br>Água c/ gás: R$ 5,00<br>Água s/gás:R$ 4,00<br>Chocoleite: R$ 7,00</p>
+        </div>
+      </div>
+
+      <div id="modal-Chocoleite" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="Choco-leite">&times;</span>
+          <h2>Choco Leite 250ml</h2>
+          <img src="./assets/Choco Leite.png" alt="">
+          <p>Achocolatado Choco Leite Gelado.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contato</h2>
+      <div class="contact-info">
+        <p>Venha nos fazer uma visita!</p>
+        <p><strong>Endereço:</strong> Rua Mato Grosso, Centro, Barra Velha<br>Em frente ao estacionamento da Câmara de
+          vereadores</p>
+        <p><strong>Telefone:</strong> (47) 8815-6371</p>
+        <p><strong>Horário:</strong> Segunda a Sábado, das 8h às 20h</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Rancho Café - A Florista. Todos os direitos reservados.</p>
+    <p>Desenvolvido por Jeremias Gomes </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
