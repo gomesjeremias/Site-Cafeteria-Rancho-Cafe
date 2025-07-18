@@ -425,6 +425,39 @@ footer {
 }
 
 /* Responsividade */
+
+@media (max-width: 1450px) {
+
+    .menu-item {
+        height: 93vh;
+        width: 24vw;
+    }
+
+    .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 97vw;
+    width: 20vw;
+    text-align: center;
+    position: relative;
+    height: 32rem;
+}
+
+h2 {
+    font-size: 2.0rem;
+}
+
+.modal img {
+    
+    margin-bottom: 10px;
+    border-radius: 8px;
+    height: 12rem;
+    width: 100%;
+
+}
+}
+
 @media (max-width: 768px) {
     .home-text h1 {
         font-size: 4rem;
