@@ -592,6 +592,7 @@ h2 {
 
     .modal-content {
         max-width: 350px;
+        width: 235px;
         padding: 15px;
     }
 }
