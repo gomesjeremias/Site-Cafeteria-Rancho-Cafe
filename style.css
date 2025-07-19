@@ -434,28 +434,28 @@ footer {
     }
 
     .modal-content {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 97vw;
-    width: 20vw;
-    text-align: center;
-    position: relative;
-    height: 32rem;
-}
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 97vw;
+        width: 20vw;
+        text-align: center;
+        position: relative;
+        height: 32rem;
+    }
 
-h2 {
-    font-size: 2.0rem;
-}
+    h2 {
+        font-size: 2.0rem;
+    }
 
-.modal img {
-    
-    margin-bottom: 10px;
-    border-radius: 8px;
-    height: 12rem;
-    width: 100%;
+    .modal img {
 
-}
+        margin-bottom: 10px;
+        border-radius: 8px;
+        height: 12rem;
+        width: 100%;
+
+    }
 }
 
 @media (max-width: 768px) {
@@ -543,6 +543,12 @@ h2 {
     body {
 
         margin: 4px;
+    }
+
+    .modal-content {
+
+        width: 52vw;
+        height: 36rem;
     }
 }
 
