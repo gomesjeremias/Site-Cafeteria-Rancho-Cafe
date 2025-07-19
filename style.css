@@ -426,7 +426,7 @@ footer {
 
 /* Responsividade */
 
-@media (max-width: 1000px) {
+@media (max-width: 1500px) {
 
     .menu-item {
         height: 93vh;
