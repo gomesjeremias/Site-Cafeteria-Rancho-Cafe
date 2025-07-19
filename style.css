@@ -552,6 +552,8 @@ footer {
 }
 
 @media (max-width: 480px) {
+   
+    
     .home-text h1 {
         font-size: 3rem;
     }
@@ -579,10 +581,16 @@ footer {
         writing-mode: vertical-rl;
     }
 
+    .sub-tabs {
+        margin-left: 10px;
+    }
+
     .menu-container {
         grid-template-columns: 1fr;
         gap: 15px;
         width: 74vw;
+        margin-right: 0;
+        margin-left: -12px;
     }
 
     .menu-item {
